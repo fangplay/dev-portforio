@@ -201,10 +201,12 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
       <li><a href="./assets/hobbies.html" target="_blank">My Hobbies</a></li>
     </ul>
   </body>
-  <footer>
-    <p>
-      ©{{ new Date().getFullYear() }} Developed By FANGPLAY SIRIRAK All rights
-      reserved.
-    </p>
-  </footer>
+          <footer class="footer" data-background-color="black">
+                <div class="copyright" id="copyright">
+            &copy;
+            <script>
+              document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
+            </script> Edited By FANGPLAY SIRIRAK
+          </div>
+        </footer>
 </html>
